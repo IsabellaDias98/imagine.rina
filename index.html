@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>imagine.rina - Motivation and Personal Development</title>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-slate-50">
+
+<!-- HEADER -->
+<header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <nav class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+
+            <!-- LOGO -->
+            <div class="flex items-center space-x-2 cursor-pointer" onclick="scrollToSection('hero')">
+                <div class="bg-gradient-to-r from-purple-700 to-orange-500 p-2 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="w-6 h-6 text-white transition-transform duration-300 hover:rotate-6"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M16.17 7.83 2 22"/>
+                        <path d="M4.02 12a2.827 2.827 0 1 1 3.81-4.17A2.827 2.827 0 1 1 12 4.02a2.827 2.827 0 1 1 4.17 3.81A2.827 2.827 0 1 1 19.98 12a2.827 2.827 0 1 1-3.81 4.17A2.827 2.827 0 1 1 12 19.98a2.827 2.827 0 1 1-4.17-3.81A1 1 0 1 1 4 12"/>
+                        <path d="m7.83 7.83 8.34 8.34"/>
+                    </svg>
+                </div>
+                <span class="text-xl font-bold text-gray-800">imagine.rina</span>
+            </div>
+
+            <!-- MENU -->
+            <div class="hidden md:flex items-center space-x-8">
+                <button onclick="scrollToSection('about')" class="text-gray-700 hover:text-orange-500 transition-colors font-medium">About</button>
+                <button onclick="scrollToSection('videos')" class="text-gray-700 hover:text-orange-500 transition-colors font-medium">Videos</button>
+                <button onclick="scrollToSection('contact')" class="text-gray-700 hover:text-orange-500 transition-colors font-medium">Contact</button>
+
+                <a href="https://youtube.com/@seucanal" target="_blank" rel="noopener noreferrer"
+                   class="bg-gradient-to-r from-purple-700 to-orange-500 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium">
+                    Inscreva-se
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="pt-32 pb-20 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+            <!-- TEXTO -->
+            <div class="space-y-8 animate-fade-in">
+                <div class="inline-block">
+                    <span class="bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold">
+                        Motivation • Growth • Life
+                    </span>
+                </div>
+
+                <h1 class="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+                    Transform your
+                    <span class="block bg-gradient-to-r from-purple-700 to-orange-500 bg-clip-text text-transparent">
+                        life today
+                    </span>
+                </h1>
+
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Welcome to my channel! Here I share content about motivation, personal development, and reflections on life. Join thousands of people who are transforming their lives.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button onclick="scrollToSection('videos')"
+                            class="group bg-gradient-to-r from-purple-700 to-orange-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2">
+                        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        <span>Watch Videos</span>
+                    </button>
+
+                    <a href="https://youtube.com/@seucanal" target="_blank" rel="noopener noreferrer"
+                       class="border-2 border-gray-800 text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-800 hover:text-white transition-all duration-300 flex items-center justify-center">
+                        Subscribe on YouTube
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD VÍDEO -->
+            <a href="https://www.youtube.com/watch?v=32si5cfrCNc"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="relative block aspect-video rounded-3xl overflow-hidden shadow-2xl group">
+
+                <!-- Thumbnail do YouTube -->
+                <img
+                        src="https://img.youtube.com/vi/32si5cfrCNc/maxresdefault.jpg"
+                        alt="Vídeo em destaque"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                >
+
+                <!-- Overlay gradiente -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-purple-900/40 to-orange-500/30"></div>
+
+                <!-- Botão Play -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="bg-white/90 backdrop-blur rounded-full p-6 shadow-lg group-hover:scale-110 transition-transform">
+                        <svg class="w-12 h-12 text-orange-500" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Título -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                About the Channel
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                A space dedicated to your personal transformation through application, reflection, and practical strategies for a fuller life.
+            </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                <div class="bg-gradient-to-r from-purple-700 to-purple-900 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <svg class="text-white" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Authenticity</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Genuine content and real experiences to inspire your journey.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                <div class="bg-gradient-to-r from-purple-700 to-purple-900 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <svg class="text-white" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <path d="M12 8v-2m0 14v-2M4 12H2m18 0h-2M6.22 6.22l-1.41-1.41M17.78 17.78l-1.41-1.41M6.22 17.78l-1.41 1.41M17.78 6.22l-1.41-1.41"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Purpose</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Helping you find and pursue your life goals.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                <div class="bg-gradient-to-r from-purple-700 to-purple-900 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <svg class="text-white" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M12 7v5l3 3"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Growth</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Practical tools for your continuous personal development.
+                </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                <div class="bg-gradient-to-r from-purple-700 to-purple-900 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <svg class="text-white" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Connection</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    A community of people seeking to live with more meaning.
+                </p>
+            </div>
+        </div>
+
+        <!-- Missão -->
+        <div class="bg-gradient-to-r from-orange-400 to-orange-600 rounded-3xl p-12 text-white">
+            <div class="max-w-3xl mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-4">My Mission</h3>
+                <p class="text-lg leading-relaxed opacity-95">
+                    I believe everyone has the potential to create an extraordinary life. Through my videos, I seek to share insights, inspiring stories, and practical tools to help you overcome challenges, discover your purpose, and achieve your dreams. Together, we can create a community committed to personal growth and fulfillment.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos" class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Título -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                Recent Videos
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Explore the content that is helping thousands of people transform their lives.
+            </p>
+        </div>
+
+        <!-- Grid de vídeos -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="videoGrid">
+            <!-- Videos will be populated by JavaScript -->
+        </div>
+
+        <!-- Botão YouTube -->
+        <div class="text-center mt-12">
+            <a
+                    href="https://youtube.com/@seucanal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center space-x-2
+                       bg-gradient-to-r from-purple-800 to-purple-950
+                       hover:from-orange-500 hover:to-orange-600
+                       text-white px-8 py-4 rounded-full font-semibold text-lg
+                       shadow-lg hover:shadow-2xl transition-all duration-300"
+            >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>View All Videos on YouTube</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Título -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                Let's Talk
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Do you have any questions, suggestions, or would you like to collaborate? Get in touch with me!
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+
+            <!-- LADO ESQUERDO -->
+            <div class="space-y-8">
+
+                <!-- Redes sociais -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                        Social Media
+                    </h3>
+                    <div class="space-y-4" id="socialLinks">
+                        <!-- Social links will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- CTA Comunidade -->
+                <div class="bg-gradient-to-r from-purple-800 to-purple-950 rounded-2xl p-8 text-white shadow-xl">
+                    <h3 class="text-2xl font-bold mb-4">
+                        Join the Community
+                    </h3>
+                    <p class="mb-6 opacity-95">
+                        Subscribe to the channel and turn on notifications so you don't miss any new videos about motivation and personal development.
+                    </p>
+
+                    <a
+                            href="https://youtube.com/@seucanal"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center space-x-2
+                   bg-orange-500 hover:bg-orange-600
+                   text-white px-6 py-3 rounded-full font-semibold
+                   shadow-lg hover:shadow-xl transition-all"
+                    >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        <span>Subscribe Now</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- LADO DIREITO -->
+            <form
+                    id="contactForm"
+                    class="bg-white rounded-2xl p-8 shadow-lg space-y-5"
+            >
+                <h3 class="text-2xl font-bold text-gray-900">
+                    Send a Message
+                </h3>
+
+                <input
+                        type="text"
+                        name="name"
+                        placeholder="Your name"
+                        required
+                        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                />
+
+                <input
+                        type="email"
+                        name="email"
+                        placeholder="Your email"
+                        required
+                        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                />
+
+                <textarea
+                        name="message"
+                        rows="5"
+                        placeholder="Your message"
+                        required
+                        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                ></textarea>
+
+                <button
+                        type="submit"
+                        class="w-full bg-gradient-to-r from-purple-700 to-orange-500
+                 text-white py-3 rounded-full font-semibold
+                 hover:scale-105 transition-transform"
+                >
+                    Send Message
+                </button>
+
+                <p id="formStatus" class="text-sm text-center"></p>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+
+            <!-- LOGO (IGUAL AO HEADER) -->
+            <div class="flex items-center space-x-2 cursor-pointer" onclick="scrollToSection('hero')">
+                <div class="bg-gradient-to-r from-purple-700 to-orange-500 p-2 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="w-6 h-6 text-white transition-transform duration-300 hover:rotate-6"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M16.17 7.83 2 22"/>
+                        <path d="M4.02 12a2.827 2.827 0 1 1 3.81-4.17A2.827 2.827 0 1 1 12 4.02a2.827 2.827 0 1 1 4.17 3.81A2.827 2.827 0 1 1 19.98 12a2.827 2.827 0 1 1-3.81 4.17A2.827 2.827 0 1 1 12 19.98a2.827 2.827 0 1 1-4.17-3.81A1 1 0 1 1 4 12"/>
+                        <path d="m7.83 7.83 8.34 8.34"/>
+                    </svg>
+                </div>
+                <span class="text-xl font-bold text-white">
+                    imagine.rina
+                </span>
+            </div>
+
+            <!-- FRASE -->
+            <div class="flex items-center space-x-2 text-gray-400 text-sm text-center">
+                <span>Made with</span>
+
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="text-orange-500">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="text-gray-400 text-sm">
+                © <span id="year"></span> All rights reserved
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- EMAILJS v3 -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+    emailjs.init("9EbzCaeAM6iAyqmH4");
+</script>
+
+<!-- SEU SCRIPT -->
+<script src="src/js/script.js"></script>
+</body>
+</html>

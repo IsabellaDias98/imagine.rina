@@ -205,6 +205,27 @@ async function loadContact() {
 
 loadContact()
 
+function getSocialIcon(icon) {
+  if (icon === 'youtube') {
+    return `<svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M23.5 6.2s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.4-1C16.9 2.5 12 2.5 12 2.5h0s-4.9 0-8.2.4c-.5.1-1.5.1-2.4 1-.7.7-.9 2.3-.9 2.3S.3 8 .3 9.7v1.6c0 1.7.2 3.5.2 3.5s.2 1.6.9 2.3c.9.9 2.1.9 2.6 1 1.9.2 8 .4 8 .4s4.9 0 8.2-.4c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.3.9-2.3s.2-1.7.2-3.5V9.7c0-1.7-.2-3.5-.2-3.5z"/>
+      <polygon points="9.75,15.02 15.5,11.75 9.75,8.48"/>
+    </svg>`
+  }
+
+  if (icon === 'instagram') {
+    return `<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="1"/>
+    </svg>`
+  }
+
+  return `<svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10"/>
+  </svg>`
+}
+
 async function loadSocialLinks() {
   const url = `https://${sanityConfig.projectId}.api.sanity.io/v${sanityConfig.apiVersion}/data/query/${sanityConfig.dataset}?query=${encodeURIComponent(socialQuery)}`
 
@@ -238,4 +259,5 @@ async function loadSocialLinks() {
 }
 
 loadSocialLinks()
+
 

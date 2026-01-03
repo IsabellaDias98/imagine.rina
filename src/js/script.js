@@ -44,14 +44,6 @@
       },
     ];
 
-    // Dados das redes sociais
-    const socialLinks = [
-      { name: 'YouTube', url: 'https://youtube.com/@seucanal', icon: 'youtube' },
-      { name: 'Instagram', url: 'https://instagram.com/seucanal', icon: 'instagram' },
-      { name: 'Twitter', url: 'https://twitter.com/seucanal', icon: 'twitter' },
-      { name: 'Email', url: 'mailto:contato@seucanal.com', icon: 'mail' },
-    ];
-
     // Preencher ano no footer
     document.getElementById('year').textContent = new Date().getFullYear();
 

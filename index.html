@@ -60,19 +60,19 @@
             <!-- TEXTO -->
             <div class="space-y-8 animate-fade-in">
                 <div class="inline-block">
-                    <span class="bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold">
+                    <span id="hero-badge" class="bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold">
                         Motivation • Growth • Life
                     </span>
                 </div>
 
-                <h1 class="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+                <h1 id="hero-title" class="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
                     Transform your
                     <span class="block bg-gradient-to-r from-purple-700 to-orange-500 bg-clip-text text-transparent">
                         life today
                     </span>
                 </h1>
 
-                <p class="text-xl text-gray-600 leading-relaxed">
+                <p id="hero-subtitle" class="text-xl text-gray-600 leading-relaxed">
                     Welcome to my channel! Here I share content about motivation, personal development, and reflections on life. Join thousands of people who are transforming their lives.
                 </p>
 
@@ -85,7 +85,8 @@
                         <span>Watch Videos</span>
                     </button>
 
-                    <a href="https://youtube.com/@seucanal" target="_blank" rel="noopener noreferrer"
+                    <a id="hero-youtube"
+                       href="https://youtube.com/@seucanal" target="_blank" rel="noopener noreferrer"
                        class="border-2 border-gray-800 text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-800 hover:text-white transition-all duration-300 flex items-center justify-center">
                         Subscribe on YouTube
                     </a>
@@ -93,13 +94,14 @@
             </div>
 
             <!-- CARD VÍDEO -->
-            <a href="https://www.youtube.com/watch?v=32si5cfrCNc"
+            <a id="hero-video" href="https://www.youtube.com/watch?v=32si5cfrCNc"
                target="_blank"
                rel="noopener noreferrer"
                class="relative block aspect-video rounded-3xl overflow-hidden shadow-2xl group">
 
                 <!-- Thumbnail do YouTube -->
                 <img
+                        id="hero-thumbnail"
                         src="https://img.youtube.com/vi/32si5cfrCNc/maxresdefault.jpg"
                         alt="Vídeo em destaque"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -128,10 +130,10 @@
 
         <!-- Título -->
         <div class="text-center mb-16">
-            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 id="about-title" class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                 About the Channel
             </h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p id="about-description" class="text-xl text-gray-600 max-w-3xl mx-auto">
                 A space dedicated to your personal transformation through application, reflection, and practical strategies for a fuller life.
             </p>
         </div>
@@ -146,8 +148,8 @@
                         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Authenticity</h3>
-                <p class="text-gray-600 leading-relaxed">
+                <h3 id="about-card-1-title" class="text-xl font-bold text-gray-900 mb-3">Authenticity</h3>
+                <p id="about-card-1-text" class="text-gray-600 leading-relaxed">
                     Genuine content and real experiences to inspire your journey.
                 </p>
             </div>
@@ -160,8 +162,8 @@
                         <path d="M12 8v-2m0 14v-2M4 12H2m18 0h-2M6.22 6.22l-1.41-1.41M17.78 17.78l-1.41-1.41M6.22 17.78l-1.41 1.41M17.78 6.22l-1.41-1.41"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Purpose</h3>
-                <p class="text-gray-600 leading-relaxed">
+                <h3 id="about-card-2-title" class="text-xl font-bold text-gray-900 mb-3">Purpose</h3>
+                <p id="about-card-2-text" class="text-gray-600 leading-relaxed">
                     Helping you find and pursue your life goals.
                 </p>
             </div>
@@ -174,8 +176,8 @@
                         <path d="M12 7v5l3 3"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Growth</h3>
-                <p class="text-gray-600 leading-relaxed">
+                <h3 id="about-card-3-title" class="text-xl font-bold text-gray-900 mb-3">Growth</h3>
+                <p id="about-card-3-text" class="text-gray-600 leading-relaxed">
                     Practical tools for your continuous personal development.
                 </p>
             </div>
@@ -187,8 +189,8 @@
                         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Connection</h3>
-                <p class="text-gray-600 leading-relaxed">
+                <h3 id="about-card-4-title" class="text-xl font-bold text-gray-900 mb-3">Connection</h3>
+                <p id="about-card-4-text" class="text-gray-600 leading-relaxed">
                     A community of people seeking to live with more meaning.
                 </p>
             </div>
@@ -197,8 +199,8 @@
         <!-- Missão -->
         <div class="bg-gradient-to-r from-orange-400 to-orange-600 rounded-3xl p-12 text-white">
             <div class="max-w-3xl mx-auto text-center">
-                <h3 class="text-3xl font-bold mb-4">My Mission</h3>
-                <p class="text-lg leading-relaxed opacity-95">
+                <h3 id="about-mission-title" class="text-3xl font-bold mb-4">My Mission</h3>
+                <p id="about-mission-text" class="text-lg leading-relaxed opacity-95">
                     I believe everyone has the potential to create an extraordinary life. Through my videos, I seek to share insights, inspiring stories, and practical tools to help you overcome challenges, discover your purpose, and achieve your dreams. Together, we can create a community committed to personal growth and fulfillment.
                 </p>
             </div>
@@ -213,10 +215,10 @@
 
         <!-- Título -->
         <div class="text-center mb-16">
-            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 id="videos-title" class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                 Recent Videos
             </h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p id="videos-description" class="text-xl text-gray-600 max-w-3xl mx-auto">
                 Explore the content that is helping thousands of people transform their lives.
             </p>
         </div>
@@ -229,6 +231,7 @@
         <!-- Botão YouTube -->
         <div class="text-center mt-12">
             <a
+                    id="videos-youtube"
                     href="https://youtube.com/@seucanal"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -405,6 +408,7 @@
 </script>
 
 <!-- SEU SCRIPT -->
+<script src="src/js/sanity.js"></script>
 <script src="src/js/script.js"></script>
 </body>
 </html>

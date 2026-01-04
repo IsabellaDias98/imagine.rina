@@ -1,4 +1,4 @@
-console.log("sanity.js carregou ✅")
+alert("SANITY JS ESTÁ RODANDO");
 
 const sanityConfig = {
   projectId: 'gqkdumnk',
@@ -259,5 +259,6 @@ async function loadSocialLinks() {
 }
 
 loadSocialLinks()
+
 
 

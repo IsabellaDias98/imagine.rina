@@ -1,5 +1,3 @@
-alert("SANITY JS ESTÁ RODANDO");
-
 const sanityConfig = {
   projectId: 'gqkdumnk',
   dataset: 'production',
@@ -259,6 +257,7 @@ async function loadSocialLinks() {
 }
 
 loadSocialLinks()
+
 
 
 

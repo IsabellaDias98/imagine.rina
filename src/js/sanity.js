@@ -244,7 +244,7 @@ async function loadSocialLinks() {
 
     a.innerHTML = `
       <div class="bg-gray-100 p-3 rounded-lg">
-        ${getSocialIcon(link.icon)}
+        
       </div>
       <div>
         <div class="font-semibold text-gray-900">${link.name}</div>
@@ -257,6 +257,7 @@ async function loadSocialLinks() {
 }
 
 loadSocialLinks()
+
 
 
 

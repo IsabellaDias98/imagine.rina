@@ -1,11 +1,3 @@
-function getSocialIcon(icon) {
-  if (icon === 'youtube') return '▶️'
-  if (icon === 'instagram') return '📸'
-  if (icon === 'twitter') return '🐦'
-  if (icon === 'email') return '✉️'
-  return '🔗'
-}
-
 const sanityConfig = {
   projectId: 'gqkdumnk',
   dataset: 'production',
@@ -269,6 +261,7 @@ async function loadSocialLinks() {
 }
 
 loadSocialLinks()
+
 
 
 

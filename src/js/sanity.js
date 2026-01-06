@@ -99,10 +99,14 @@ async function loadAbout() {
   document.getElementById('about-title').textContent = data.result.title
   document.getElementById('about-description').textContent = data.result.description
 
+  if (data.result.cards) {
   data.result.cards.forEach((card, index) => {
-    document.getElementById(`about-card-${index + 1}-title`).textContent = card.title
-    document.getElementById(`about-card-${index + 1}-text`).textContent = card.text
+    const title = document.getElementById(`about-card-${index + 1}-title`)
+    const text = document.getElementById(`about-card-${index + 1}-text`)
+    if (title) title.textContent = card.title
+    if (text) text.textContent = card.text
   })
+}
 
   document.getElementById('about-mission-title').textContent = data.result.missionTitle
   document.getElementById('about-mission-text').textContent = data.result.missionText
@@ -265,6 +269,7 @@ async function loadSocialLinks() {
 }
 
 loadSocialLinks()
+
 
 
 

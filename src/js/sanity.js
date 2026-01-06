@@ -124,6 +124,7 @@ async function loadVideos() {
   if (!data.result) return
 
   const videoGrid = document.getElementById('videoGrid')
+  if (!videoGrid) return
   videoGrid.innerHTML = ''
 
   data.result.forEach(video => {
@@ -261,6 +262,7 @@ async function loadSocialLinks() {
 }
 
 loadSocialLinks()
+
 
 
 
